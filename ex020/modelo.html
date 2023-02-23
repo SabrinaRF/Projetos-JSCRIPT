@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculadora">
+            <form action="">
+                <div class="display">
+                    <input type="text" class="text" name="display" >
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="display.value = ''" class="operador"/>
+                    <input type="button" value="DE" onclick="display.value.slice(0,-1)" class="operador"/>
+                    <input type="button" value="." onclick="display.value = '.'" class="operador"/>
+                    <input type="button" value="/" onclick="display.value = '/'" class="operador"/>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

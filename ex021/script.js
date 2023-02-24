@@ -10,3 +10,20 @@ const update = (value) => {
         alert.classList.remove("visible");
     }
 }
+
+const debounce =(callback, time) => {
+    let interval;
+    return (...args) => {
+        clearTimeout(interval);
+        interval = setTimeout(() => {
+            callback.apply(null,args);
+        }, time);
+    }
+}
+const handleStarsTyping =() => {
+    spinner.classList.add("visible");
+}
+const handleChange = debounce(input => {
+    const{value}=input.target;
+    update(value);
+}, 500)

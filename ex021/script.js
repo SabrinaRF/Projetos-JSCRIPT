@@ -20,7 +20,7 @@ const debounce =(callback, time) => {
         }, time);
     }
 }
-const handleStarsTyping =() => {
+const handleStartTyping =() => {
     spinner.classList.add("visible");
 }
 const handleChange = debounce(input => {

@@ -8,17 +8,17 @@
 .container{
     width: 100%;
     height: 100vh;
-    background-color: rgb(81, 84, 85);
+    background-color: rgb(134, 93, 177);
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.calculator{
-    background-color: rgb(29,22, 22);
+.calculadora{
+    background-color: rgb(136, 136, 136);
     padding: 20px;
-    border-radius: 10px;
-    
+    border-radius: 35px;   
 }
+
 .container form input{
     outline: none;
     border: none;
@@ -26,7 +26,7 @@
     width: 60px;
     height: 60px;
     margin: 5px;
-    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0, 1), -3px -3px -3px rgba(255, 255, 255, 0, 1) ;
+    box-shadow: 5px 5px 5px rgba(86, 78, 78 0, 1), -3px -3px -3px rgba(86, 78, 78 , 0, 1) ;
     transition: all 0.2s ease-in-out;
 }
 .container form input:hover:not(.text){
@@ -35,18 +35,21 @@
     transition: all 0.2s ease-in-out;
 }
 form .display {
+    background-color: rgb(117, 116, 116);
     display: flex;
     justify-content: flex-end;
     margin: 20px 0;
+    border-radius: 50px;
 }
 form .display input{
     width: 100%;
     text-align: right;
     font-size: 24px ;
+    border-radius: 50px;
 }
 form input.equal{
     width: 135px;
 }
 form input.operador{
-    color:red;
+    color:rgb(41, 41, 41);
 }
